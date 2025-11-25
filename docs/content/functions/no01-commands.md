@@ -231,8 +231,12 @@ create-user-file:
     - touch: data.txt>
 ```
 
-The `user` parameter allows to run commands as a specific user. In Linux systems this will require sudo rights for the
-tacoscript binary. In Windows this command will be ignored.
+The `user` parameter allows to run commands as a specific user. 
+
+**Platform Requirements:**
+- **Linux/macOS**: Requires root/sudo privileges. Tacoscript must be run with `sudo` to switch users. If not running as root, a warning will be logged and the command will likely fail with permission denied.
+- **Windows**: User switching is not implemented and will log a warning.
+
 Switching users allows to create resources (file, services, folders etc) with the ownership of the specified user.
 
 After running the above script, tacoscript will create a `data.txt` file with the ownership of `www-data` user.

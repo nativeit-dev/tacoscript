@@ -26,6 +26,13 @@ func (oe OSApi) SetUser(userName, path string, cmd *exec.Cmd) error {
 	}
 	logrus.Debugf("will set user %s to cmd %s", userName, cmd)
 
+	// Check if running as root/sudo - required for user switching
+	currentUID := syscall.Getuid()
+	if currentUID != 0 {
+		logrus.Warnf("user switching to '%s' requires root/sudo privileges (current UID: %d). Command may fail with permission denied.", userName, currentUID)
+		logrus.Warn("To switch users, run tacoscript with sudo: 'sudo tacoscript <script.yaml>'")
+	}
+
 	uid, gid, err := oe.parse(userName, path)
 	if err != nil {
 		return err

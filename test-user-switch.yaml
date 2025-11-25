@@ -1,0 +1,11 @@
+# Test script to verify user switching warnings
+# This demonstrates the user switching behavior with proper warnings
+
+test-user-switch:
+  cmd.run:
+    - name: id
+    - user: nobody
+    
+# When run without sudo, this will log:
+# WARN user switching to 'nobody' requires root/sudo privileges (current UID: <current>). Command may fail with permission denied.
+# WARN To switch users, run tacoscript with sudo: 'sudo tacoscript <script.yaml>'

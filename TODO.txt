@@ -1,2 +1,2 @@
-1. Piped commands without shell will fail (see e.g. for implementation https://gist.github.com/ochinchina/9e409a88e77c3cfd94c3)
-2. Switching users can work only under sudo in nix OS, we should show probably some warning if it's not the case or let it normally fail
+1. [RESOLVED] Piped commands without shell will fail - Commands are executed through shell via temp files, which handles pipes correctly
+2. [RESOLVED] Switching users can work only under sudo in nix OS - Added warning when attempting user switch without root privileges (UID check)
