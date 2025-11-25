@@ -1,4 +1,4 @@
-module github.com/realvnc-labs/tacoscript
+module github.com/nativeit-dev/tacoscript
 
 go 1.23
 

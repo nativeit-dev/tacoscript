@@ -8,11 +8,11 @@ import (
 	"runtime"
 	"testing"
 
-	appExec "github.com/realvnc-labs/tacoscript/exec"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/cmdrun"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/executionresult"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/names"
+	appExec "github.com/nativeit-dev/tacoscript/exec"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/cmdrun"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/executionresult"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/names"
 	"github.com/stretchr/testify/assert"
 )
 

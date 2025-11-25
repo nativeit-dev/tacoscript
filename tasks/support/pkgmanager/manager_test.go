@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/exec"
-	"github.com/realvnc-labs/tacoscript/tasks/pkgtask"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/names"
+	"github.com/nativeit-dev/tacoscript/exec"
+	"github.com/nativeit-dev/tacoscript/tasks/pkgtask"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/names"
 	"github.com/stretchr/testify/assert"
 )
 

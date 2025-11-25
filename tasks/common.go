@@ -1,6 +1,6 @@
 package tasks
 
-import "github.com/realvnc-labs/tacoscript/tasks/shared/fieldstatus"
+import "github.com/nativeit-dev/tacoscript/tasks/shared/fieldstatus"
 
 type Scripts []Script
 

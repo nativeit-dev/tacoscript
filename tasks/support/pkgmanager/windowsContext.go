@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/realvnc-labs/tacoscript/tasks/pkgtask"
+	"github.com/nativeit-dev/tacoscript/tasks/pkgtask"
 )
 
 // WingetCmdProvider provides commands for Windows Package Manager (winget)

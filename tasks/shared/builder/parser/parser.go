@@ -1,6 +1,6 @@
 package parser
 
-import "github.com/realvnc-labs/tacoscript/tasks"
+import "github.com/nativeit-dev/tacoscript/tasks"
 
 type TaskFieldParseFn func(t tasks.CoreTask, path string, val interface{}) error
 

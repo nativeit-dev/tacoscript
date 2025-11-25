@@ -5,8 +5,8 @@ import (
 	"strings"
 
 	"github.com/elliotchance/orderedmap"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 func isCyclic(curScriptID string,

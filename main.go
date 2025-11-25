@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/realvnc-labs/tacoscript/cmd"
+	"github.com/nativeit-dev/tacoscript/cmd"
 	"github.com/sirupsen/logrus"
 )
 

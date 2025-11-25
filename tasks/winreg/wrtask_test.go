@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/support/winregistry"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/support/winregistry"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

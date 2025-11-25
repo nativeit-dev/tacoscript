@@ -11,16 +11,16 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/realvncserver"
-	"github.com/realvnc-labs/tacoscript/tasks/realvncserver/rvstbuilder"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/realvncserver"
+	"github.com/nativeit-dev/tacoscript/tasks/realvncserver/rvstbuilder"
 	"gopkg.in/yaml.v2"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/realvnc-labs/tacoscript/tasks/shared/fieldstatus"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/fieldstatus"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 const (

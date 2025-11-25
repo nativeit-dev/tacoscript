@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/realvnc-labs/tacoscript/tasks/pkgtask"
+	"github.com/nativeit-dev/tacoscript/tasks/pkgtask"
 )
 
 func BuildManagementCmdsProviders() ([]ManagementCmdsProvider, error) {

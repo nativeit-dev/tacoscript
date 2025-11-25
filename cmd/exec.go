@@ -3,7 +3,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/realvnc-labs/tacoscript/script"
+	"github.com/nativeit-dev/tacoscript/script"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )

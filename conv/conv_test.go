@@ -3,7 +3,7 @@ package conv_test
 import (
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/conv"
+	"github.com/nativeit-dev/tacoscript/conv"
 	"github.com/stretchr/testify/assert"
 )
 

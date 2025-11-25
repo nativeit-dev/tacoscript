@@ -4,12 +4,12 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/realvnc-labs/tacoscript/conv"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/filemanaged"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder/parser"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/conv"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/filemanaged"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder/parser"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 type TaskBuilder struct {

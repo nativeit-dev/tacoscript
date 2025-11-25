@@ -3,8 +3,8 @@ package frtbuilder
 import (
 	"testing"
 
-	tasks "github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/filereplace"
+	tasks "github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/filereplace"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v2"

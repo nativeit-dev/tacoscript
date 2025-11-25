@@ -3,8 +3,8 @@ package wrtbuilder
 import (
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/winreg"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/winreg"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
 )

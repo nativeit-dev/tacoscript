@@ -13,17 +13,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/realvnc-labs/tacoscript/applog"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/executionresult"
+	"github.com/nativeit-dev/tacoscript/applog"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/executionresult"
 
 	log "github.com/sirupsen/logrus"
 
-	appExec "github.com/realvnc-labs/tacoscript/exec"
+	appExec "github.com/nativeit-dev/tacoscript/exec"
 
-	"github.com/realvnc-labs/tacoscript/apptest"
+	"github.com/nativeit-dev/tacoscript/apptest"
 
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/utils"
 
 	"github.com/stretchr/testify/assert"
 )

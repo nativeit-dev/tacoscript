@@ -14,10 +14,10 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	tacoexec "github.com/realvnc-labs/tacoscript/exec"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/fieldstatus"
-	"github.com/realvnc-labs/tacoscript/tasks/support/realvnc"
-	"github.com/realvnc-labs/tacoscript/utils"
+	tacoexec "github.com/nativeit-dev/tacoscript/exec"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/fieldstatus"
+	"github.com/nativeit-dev/tacoscript/tasks/support/realvnc"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 const (

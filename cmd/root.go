@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/realvnc-labs/tacoscript/applog"
+	"github.com/nativeit-dev/tacoscript/applog"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v2"

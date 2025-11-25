@@ -1,10 +1,10 @@
 package rvstbuilder
 
 import (
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/realvncserver"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/fieldstatus"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/realvncserver"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/fieldstatus"
 )
 
 type TaskBuilder struct {

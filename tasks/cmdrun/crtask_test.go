@@ -10,12 +10,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/realvnc-labs/tacoscript/apptest"
-	"github.com/realvnc-labs/tacoscript/conv"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/executionresult"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/names"
+	"github.com/nativeit-dev/tacoscript/apptest"
+	"github.com/nativeit-dev/tacoscript/conv"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/executionresult"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/names"
 
-	appExec "github.com/realvnc-labs/tacoscript/exec"
+	appExec "github.com/nativeit-dev/tacoscript/exec"
 )
 
 func TestTaskExecution(t *testing.T) {

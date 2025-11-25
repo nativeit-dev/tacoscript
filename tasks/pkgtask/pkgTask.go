@@ -7,13 +7,13 @@ import (
 	"strings"
 	"time"
 
-	tacoexec "github.com/realvnc-labs/tacoscript/exec"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/conditionals"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/executionresult"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/names"
+	tacoexec "github.com/nativeit-dev/tacoscript/exec"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/conditionals"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/executionresult"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/names"
 
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/utils"
 
 	"github.com/sirupsen/logrus"
 )

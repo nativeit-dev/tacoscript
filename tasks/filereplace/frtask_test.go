@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/conv"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/conv"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/utils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

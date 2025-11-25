@@ -10,15 +10,15 @@ import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v2"
 
-	"github.com/realvnc-labs/tacoscript/exec"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/cmdrun"
-	"github.com/realvnc-labs/tacoscript/tasks/filemanaged"
-	"github.com/realvnc-labs/tacoscript/tasks/filereplace"
-	"github.com/realvnc-labs/tacoscript/tasks/pkgtask"
-	"github.com/realvnc-labs/tacoscript/tasks/realvncserver"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/executionresult"
-	"github.com/realvnc-labs/tacoscript/tasks/winreg"
+	"github.com/nativeit-dev/tacoscript/exec"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/cmdrun"
+	"github.com/nativeit-dev/tacoscript/tasks/filemanaged"
+	"github.com/nativeit-dev/tacoscript/tasks/filereplace"
+	"github.com/nativeit-dev/tacoscript/tasks/pkgtask"
+	"github.com/nativeit-dev/tacoscript/tasks/realvncserver"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/executionresult"
+	"github.com/nativeit-dev/tacoscript/tasks/winreg"
 )
 
 type Runner struct {

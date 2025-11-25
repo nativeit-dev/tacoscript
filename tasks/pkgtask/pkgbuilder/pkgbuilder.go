@@ -3,11 +3,11 @@ package pkgbuilder
 import (
 	"fmt"
 
-	"github.com/realvnc-labs/tacoscript/conv"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/pkgtask"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder/parser"
+	"github.com/nativeit-dev/tacoscript/conv"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/pkgtask"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder/parser"
 )
 
 type TaskBuilder struct {

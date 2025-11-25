@@ -1,9 +1,9 @@
 package wrtbuilder
 
 import (
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder"
-	"github.com/realvnc-labs/tacoscript/tasks/winreg"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder"
+	"github.com/nativeit-dev/tacoscript/tasks/winreg"
 )
 
 type TaskBuilder struct {

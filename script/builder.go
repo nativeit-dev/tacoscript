@@ -10,9 +10,9 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 type FileDataProvider struct {

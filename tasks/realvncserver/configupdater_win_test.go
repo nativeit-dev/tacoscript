@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/realvnc-labs/tacoscript/tasks/realvncserver"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/fieldstatus"
-	"github.com/realvnc-labs/tacoscript/tasks/support/winregistry"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/tasks/realvncserver"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/fieldstatus"
+	"github.com/nativeit-dev/tacoscript/tasks/support/winregistry"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 var origHKLMBaseKey string

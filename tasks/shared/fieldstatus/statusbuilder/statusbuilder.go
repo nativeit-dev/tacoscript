@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/fieldstatus"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/fieldstatus"
 )
 
 const (

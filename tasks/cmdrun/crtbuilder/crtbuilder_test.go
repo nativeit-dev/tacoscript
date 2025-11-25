@@ -4,10 +4,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/conv"
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/cmdrun"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/names"
+	"github.com/nativeit-dev/tacoscript/conv"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/cmdrun"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/names"
 	"gopkg.in/yaml.v2"
 
 	"github.com/stretchr/testify/assert"

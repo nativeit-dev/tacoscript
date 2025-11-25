@@ -5,8 +5,8 @@ import (
 
 	"gopkg.in/yaml.v2"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/realvncserver"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/realvncserver"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -3,9 +3,9 @@ package pkgbuilder
 import (
 	"testing"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/pkgtask"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/names"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/pkgtask"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/names"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
 )

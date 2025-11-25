@@ -5,8 +5,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	tacoexec "github.com/realvnc-labs/tacoscript/exec"
-	"github.com/realvnc-labs/tacoscript/tasks"
+	tacoexec "github.com/nativeit-dev/tacoscript/exec"
+	"github.com/nativeit-dev/tacoscript/tasks"
 )
 
 const onlyIfConditionFailedReason = "only if condition was false"

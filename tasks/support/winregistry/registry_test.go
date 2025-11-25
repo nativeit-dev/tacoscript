@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sys/windows/registry"
 
-	"github.com/realvnc-labs/tacoscript/tasks/support/winregistry"
+	"github.com/nativeit-dev/tacoscript/tasks/support/winregistry"
 )
 
 const baseTestKey = `HKLM:\Software\TestTacoScript`

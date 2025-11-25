@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/cmdrun"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/cmdrun"
 )
 
 type BuilderMock struct {

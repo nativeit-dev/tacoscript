@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/filemanaged"
-	"github.com/realvnc-labs/tacoscript/tasks/filemanaged/fmtbuilder"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/filemanaged"
+	"github.com/nativeit-dev/tacoscript/tasks/filemanaged/fmtbuilder"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 func TestTaskBuilderFromRawYaml(t *testing.T) {

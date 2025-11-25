@@ -1,9 +1,9 @@
 package frtbuilder
 
 import (
-	tasks "github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/tasks/filereplace"
-	"github.com/realvnc-labs/tacoscript/tasks/shared/builder"
+	tasks "github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/tasks/filereplace"
+	"github.com/nativeit-dev/tacoscript/tasks/shared/builder"
 )
 
 type TaskBuilder struct {

@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/realvnc-labs/tacoscript/tasks/pkgtask"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/tasks/pkgtask"
+	"github.com/nativeit-dev/tacoscript/utils"
 	"github.com/sirupsen/logrus"
 )
 

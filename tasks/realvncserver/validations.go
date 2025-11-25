@@ -10,8 +10,8 @@ import (
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 
-	"github.com/realvnc-labs/tacoscript/tasks"
-	"github.com/realvnc-labs/tacoscript/utils"
+	"github.com/nativeit-dev/tacoscript/tasks"
+	"github.com/nativeit-dev/tacoscript/utils"
 )
 
 const (

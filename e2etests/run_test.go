@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/realvnc-labs/tacoscript/script"
+	"github.com/nativeit-dev/tacoscript/script"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
 )
