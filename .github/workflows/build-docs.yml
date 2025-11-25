@@ -11,13 +11,13 @@ permissions:
 jobs:
   docs:
     name: Build and deploy docs
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Markdown Lint
         run: |
@@ -27,7 +27,7 @@ jobs:
       - name: Build with Hugo
         run: |
           pwd
-          curl -sL https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_0.101.0_Linux-64bit.tar.gz|tar xzf - hugo
+          curl -sL https://github.com/gohugoio/hugo/releases/download/v0.139.4/hugo_0.139.4_linux-amd64.tar.gz|tar xzf - hugo
           mv hugo ~/
           ~/hugo --version||true
           cd docs
@@ -36,12 +36,12 @@ jobs:
           find public
 
       - name: Setup Pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './docs/public'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@main
+        uses: actions/deploy-pages@v4

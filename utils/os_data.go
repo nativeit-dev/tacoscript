@@ -3,7 +3,7 @@ package utils
 import (
 	"strings"
 
-	"github.com/shirou/gopsutil/host"
+	"github.com/shirou/gopsutil/v3/host"
 )
 
 type TemplateVarsMap map[string]string

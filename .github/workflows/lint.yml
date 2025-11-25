@@ -3,16 +3,18 @@ on: [push]
 jobs:
   golangci:
     name: Lint
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/setup-go@v3 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
 
       - name: go mod vendor
         run: go mod vendor
 
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@v2
+        uses: golangci/golangci-lint-action@v6
         with:
-          version: v1.51.2
+          version: v1.62
           args: -c .golangci.yml

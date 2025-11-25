@@ -31,8 +31,6 @@ linters-settings:
     min-complexity: 30
   goimports:
     local-prefixes: github.com/golangci/golangci-lint
-  golint:
-    min-confidence: 0
   govet:
     check-shadowing: true
     settings:
@@ -44,8 +42,6 @@ linters-settings:
           - (github.com/golangci/golangci-lint/pkg/logutils.Log).Fatalf
   lll:
     line-length: 140
-  maligned:
-    suggest-new: true
   misspell:
     locale: US
   nolintlint:
@@ -83,7 +79,6 @@ linters:
     - nakedret
     - noctx
     - nolintlint
-    - exportloopref
     - staticcheck
     - stylecheck
     - typecheck
