@@ -1,0 +1,45 @@
+# Example Tacoscript demonstrating winget package management on Windows
+# This script installs common development tools using winget
+
+# Install Visual Studio Code
+install-vscode:
+  pkg.installed:
+    - name: Microsoft.VisualStudioCode
+    - refresh: true
+
+# Install Git
+install-git:
+  pkg.installed:
+    - name: Git.Git
+    - refresh: true
+
+# Install 7-Zip with specific version
+install-7zip:
+  pkg.installed:
+    - name: 7zip.7zip
+    - version: 23.01
+    - refresh: true
+
+# Install multiple packages at once
+install-dev-tools:
+  pkg.installed:
+    - refresh: true
+    - names:
+        - Microsoft.PowerShell
+        - Microsoft.WindowsTerminal
+        - Python.Python.3.12
+
+# Update an installed package
+update-vscode:
+  pkg.uptodate:
+    - name: Microsoft.VisualStudioCode
+    - refresh: true
+    - require:
+        - install-vscode
+
+# Remove a package (if it exists)
+remove-old-package:
+  pkg.removed:
+    - name: 7zip.7zip
+    - onlyif:
+        - where 7z.exe

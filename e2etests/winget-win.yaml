@@ -1,0 +1,48 @@
+Run:
+  install-7zip-winget:
+    pkg.installed:
+      - refresh: true
+      - name: 7zip.7zip
+      - unless:
+          - where 7z.exe
+  install-7zip-already-installed:
+    pkg.installed:
+      - refresh: true
+      - name: 7zip.7zip
+      - creates:
+          - C:\Program Files\7-Zip\7z.exe
+      - require:
+          - install-7zip-winget
+  remove-7zip-winget:
+    pkg.removed:
+      - refresh: true
+      - name: 7zip.7zip
+      - onlyif:
+          - where 7z.exe
+
+On:
+  - windows
+
+OnlyIf: "winget --version" # Skip test if winget is not available
+
+Expect:
+  PreExec: winget uninstall --id 7zip.7zip --silent 2>$null; $true
+  Summary:
+    SuccessCount: 3
+    FailedCount: 0
+    SkippedCount: 0
+    AbortedCount: 0
+  Tasks:
+    install-7zip-winget:
+      Result: true
+      Comment: "The following packages are ensured to be installed: 7zip.7zip"
+      Changes:
+        new: "7zip.7zip"
+    install-7zip-already-installed:
+      Result: true
+      Comment: "file(s) already exist"
+    remove-7zip-winget:
+      Result: true
+      Comment: "The following packages are ensured to be uninstalled: 7zip.7zip"
+      Changes:
+        removed: "7zip.7zip"

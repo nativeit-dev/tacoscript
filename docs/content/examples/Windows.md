@@ -5,6 +5,72 @@ slug: windows
 ---
 {{< toc >}}
 
+## Package Management with Winget
+
+Tacoscript supports Windows Package Manager (winget) for installing, updating, and removing applications on Windows systems.
+
+### Install a single package
+
+```yaml
+install-vscode:
+  pkg.installed:
+    - name: Microsoft.VisualStudioCode
+    - refresh: true
+```
+
+### Install multiple packages
+
+```yaml
+install-dev-tools:
+  pkg.installed:
+    - refresh: true
+    - names:
+        - Git.Git
+        - Microsoft.PowerShell
+        - Microsoft.WindowsTerminal
+        - Python.Python.3.12
+```
+
+### Install a specific version
+
+```yaml
+install-7zip-specific:
+  pkg.installed:
+    - name: 7zip.7zip
+    - version: 23.01
+    - refresh: true
+```
+
+### Update a package
+
+```yaml
+update-vscode:
+  pkg.uptodate:
+    - name: Microsoft.VisualStudioCode
+    - refresh: true
+```
+
+### Remove a package
+
+```yaml
+remove-package:
+  pkg.removed:
+    - name: 7zip.7zip
+```
+
+### Install with conditional execution
+
+```yaml
+install-git-if-not-present:
+  pkg.installed:
+    - name: Git.Git
+    - refresh: true
+    - unless:
+        - where git.exe
+```
+
+**Note:** Winget is available on Windows 11 and Windows 10 version 1809+. If winget is not available, Tacoscript automatically falls back to Chocolatey. Package names for winget use the Package ID format (e.g., `Microsoft.VisualStudioCode`, `Git.Git`). Find package IDs at [winget.run](https://winget.run) or use `winget search <package-name>`.
+
 ## Run command with dependency
 
 ```yaml

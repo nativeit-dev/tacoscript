@@ -8,7 +8,19 @@ slug: packages
 
 ## Preface
 
-Tacoscript comes with functions to install software packages via package manager on you system.
+Tacoscript comes with functions to install software packages via package manager on your system.
+
+### Windows Package Managers
+
+On Windows, Tacoscript supports both **winget** (Windows Package Manager) and **Chocolatey**:
+
+- **winget** is prioritized and is the modern, built-in package manager for Windows 11 and Windows 10 (version 1809+)
+- If winget is not available, Tacoscript automatically falls back to **Chocolatey**
+
+When using winget, package names should use the **Package ID** format (e.g., `7zip.7zip`, `Microsoft.VisualStudioCode`, `Git.Git`). You can find package IDs by:
+- Searching at [winget.run](https://winget.run)
+- Using `winget search <package-name>` command
+- Checking the [Microsoft winget-pkgs repository](https://github.com/microsoft/winget-pkgs)
 
 ## `pkg.installed`
 
@@ -111,15 +123,31 @@ If true, the tacoscript will update list of available packages, e.g. execute `ap
 
 ### OS Support
 
-| OS      | OS Platform   | Package manager           | Installation script to be executed, e.g. vim |
-| ------- | ------------- | ------------------------- | -------------------------------------------- |
-| macOS   | Darwin        | brew                      | `brew install vim`                           |
-| Linux   | Ubuntu/Debian | apt (fallback to apt-get) | `apt install -y vim`                         |
-| Linux   | CentOS/Redhat | dnf (fallback to yum)     | `dnf install -y vim`                         |
-| Windows | Windows       | choco                     | `choco install -y vim`                       |
+| OS      | OS Platform   | Package manager              | Installation script to be executed                                                  |
+| ------- | ------------- | ---------------------------- | ----------------------------------------------------------------------------------- |
+| macOS   | Darwin        | brew                         | `brew install vim`                                                                  |
+| Linux   | Ubuntu/Debian | apt (fallback to apt-get)    | `apt install -y vim`                                                                |
+| Linux   | CentOS/Redhat | dnf (fallback to yum)        | `dnf install -y vim`                                                                |
+| Windows | Windows       | winget (fallback to choco)   | `winget install --exact --id vim --silent --accept-package-agreements --accept-source-agreements` |
 
 Note if a corresponding package manager is not installed on the host system, a fallback will be used.
 If both are not available, the script will fail.
+
+**Windows Examples:**
+```yaml
+# Using winget with Package ID
+install-vscode:
+  pkg.installed:
+    - name: Microsoft.VisualStudioCode
+    - refresh: true
+
+# Install 7-Zip with specific version
+install-7zip:
+  pkg.installed:
+    - name: 7zip.7zip
+    - version: 23.01
+    - refresh: true
+```
 
 ## `pkg.uptodate`
 
@@ -189,12 +217,12 @@ See #pkg.installed for reverence.
 
 ### OS Support
 
-| OS      | OS Platform   | Package manager           | Installation script to be executed, e.g. vim |
-| ------- | ------------- | ------------------------- | -------------------------------------------- |
-| macOS   | Darwin        | brew                      | `brew upgrade vim`                           |
-| Linux   | Ubuntu/Debian | apt (fallback to apt-get) | `apt upgrade -y vim`                         |
-| Linux   | CentOS/Redhat | dnf (fallback to yum)     | `dnf upgrade -y vim`                         |
-| Windows | Windows       | choco                     | `choco upgrade -y vim`                       |
+| OS      | OS Platform   | Package manager              | Installation script to be executed                                                  |
+| ------- | ------------- | ---------------------------- | ----------------------------------------------------------------------------------- |
+| macOS   | Darwin        | brew                         | `brew upgrade vim`                                                                  |
+| Linux   | Ubuntu/Debian | apt (fallback to apt-get)    | `apt upgrade -y vim`                                                                |
+| Linux   | CentOS/Redhat | dnf (fallback to yum)        | `dnf upgrade -y vim`                                                                |
+| Windows | Windows       | winget (fallback to choco)   | `winget upgrade --exact --id vim --silent --accept-package-agreements --accept-source-agreements` |
 
 Note if a corresponding package manager is not installed on the host system, a fallback will be used.
 If both are not available, the script will fail. If the package is not yet installed, the behaviour will vary
@@ -265,12 +293,12 @@ See #pkg.installed for reverence.
 
 ### OS Support
 
-| OS      | OS Platform   | Package manager           | Installation script to be executed, e.g. vim |
-| ------- | ------------- | ------------------------- | -------------------------------------------- |
-| macOS   | Darwin        | brew                      | `brew uninstall vim`                         |
-| Linux   | Ubuntu/Debian | apt (fallback to apt-get) | `apt remove -y vim`                          |
-| Linux   | CentOS/Redhat | dnf (fallback to yum)     | `dnf remove -y vim`                          |
-| Windows | Windows       | choco                     | `choco uninstall -y vim`                     |
+| OS      | OS Platform   | Package manager              | Installation script to be executed                   |
+| ------- | ------------- | ---------------------------- | ---------------------------------------------------- |
+| macOS   | Darwin        | brew                         | `brew uninstall vim`                                 |
+| Linux   | Ubuntu/Debian | apt (fallback to apt-get)    | `apt remove -y vim`                                  |
+| Linux   | CentOS/Redhat | dnf (fallback to yum)        | `dnf remove -y vim`                                  |
+| Windows | Windows       | winget (fallback to choco)   | `winget uninstall --exact --id vim --silent`         |
 
-Note if a corresponding package manager is not installed on the host system, a fallback be used.
+Note if a corresponding package manager is not installed on the host system, a fallback will be used.
 If both are not available, the script will fail.

@@ -1,0 +1,14 @@
+# Simple test script for winget functionality
+# Save this as test-winget.yaml and run: tacoscript test-winget.yaml
+
+test-winget-available:
+  cmd.run:
+    - name: winget --version
+    - shell: powershell.exe
+
+install-notepadplusplus:
+  pkg.installed:
+    - name: Notepad++.Notepad++
+    - refresh: true
+    - unless:
+        - where notepad++.exe
