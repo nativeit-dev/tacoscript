@@ -20,6 +20,15 @@ in a convenient way.
 Tacoscript is declarative. You define how the system, a file or a software should look like after tacoscript has run.
 Before each run, Tacoscript compares the desired outcome with the current state. Only the missing steps are preformed.
 
+## Features
+
+- **Configuration Management Database (CMDB)**: Built-in ITIL-compliant CMDB for tracking configuration items, changes, and execution history
+- **Package Management**: Support for multiple package managers (winget, Chocolatey, apt, yum, brew)
+- **Cross-platform**: Runs on Windows, Linux, and macOS
+- **Dependency-free**: Single static binary with no external dependencies
+- **Idempotent**: Safe to run multiple times - only performs necessary changes
+- **Audit Trail**: Complete history of all system changes and executions
+
 ## Program execution
 
 Prepare a script in the yaml format , e.g. `tascoscript.yaml`, then execute it.
@@ -35,6 +44,38 @@ tacoscript -v tascoscript.yaml
 ```
 
 _You can use any file extension. Using `.taco` for example is fine too._
+
+## Configuration Management Database (CMDB)
+
+Tacoscript includes a built-in CMDB for tracking system configurations and changes:
+
+```shell
+# Initialize the CMDB
+tacoscript cmdb init
+
+# Discover and register the current system
+tacoscript cmdb discover
+
+# List all configuration items
+tacoscript cmdb list
+
+# Show details for a specific system
+tacoscript cmdb show <hostname>
+
+# View change history
+tacoscript cmdb history <hostname>
+
+# Show statistics
+tacoscript cmdb stats
+```
+
+The CMDB automatically tracks:
+- System configurations and hardware information
+- All script executions and their results
+- Software package installations and updates
+- Configuration changes with full audit trail
+
+[Read full CMDB documentation](https://tacoscript.io/cmdb/)
 
 ## Scripting
 
